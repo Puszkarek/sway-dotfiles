@@ -6,9 +6,9 @@
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 10,
+    "margin-right": 5,
     "margin-bottom": 0,
-    "margin-left": 10,
+    "margin-left": 5,
 
     "modules-left": ["sway/workspaces"],
     "modules-center": ["custom/cava"],
@@ -28,22 +28,21 @@
     }
   },
   {
-    "output": "DP-2",
+    "output": "eDP-1",
     "layer": "top",
     "spacing": 0,
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 10,
+    "margin-right": 5,
     "margin-bottom": 0,
-    "margin-left": 10,
+    "margin-left": 5,
 
-    "modules-left": ["custom/logo", "sway/workspaces", "custom/lyrics"],
+    "modules-left": ["sway/workspaces", "custom/lyrics"],
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "temperature", "network"],
+    "modules-right": ["cpu", "memory", "temperature", "network", "battery"],
 
     "sway/workspaces": {
-      "disable-scroll": true,
       "all-outputs": false,
       "tooltip": false
     },

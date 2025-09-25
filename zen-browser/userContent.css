@@ -1,0 +1,336 @@
+:root.theme-dark {
+  --theme-tab-toolbar-background: #0e0e17 !important;
+  --theme-toolbar-background: #0e0e17 !important;
+  --theme-selection-color: #fb932e !important;
+  --theme-splitter-color: #ff3845 !important;
+  --devtools-splitter-color: #ff3845 !important;
+  --theme-toolbar-separator: #ff3845 !important;
+  --theme-emphasized-splitter-color: #ff3845 !important;
+  --theme-comment: #ffacac !important;
+  --theme-icon-dimmed-color: #ffacac !important;
+
+  --test-theme-body-background: #0e0e17 !important;
+  --theme-body-background: #0e0e17 !important;
+  --theme-sidebar-background: #0e0e17 !important;
+  --theme-accordion-header-background: #0e0e17 !important;
+  --theme-accordion-header-hover-background: #0e0e17 !important;
+
+  --badge-scrollable-color: #2570d4 !important;
+  --badge-scrollable-background-color: #030305 !important;
+  --badge-scrollable-active-background-color: #030305 !important;
+  --badge-scrollable-active-color: #fb932e !important;
+  --toolbarbutton-background: #0e0e17 !important;
+  --toolbarbutton-hover-background: #0e0e17 !important;
+  /*   --badge-active-background-color: red;
+  --badge-active-border-color: red;
+  --badge-background-color: red;
+  --badge-border-color: red;
+  --badge-color: red;
+  --badge-interactive-background-color: red;
+  --badge-interactive-color: red;
+  --badge-hover-interactive-background-color: red;
+  --badge-hover-interactive-color: var(--badge-color);
+  --badge-interactive-border-color: red; */
+
+  --devtools-splitter-inline-start-width: 4px !important;
+  --devtools-splitter-inline-end-width: 4px !important;
+
+  --theme-body-color: #ff3845 !important;
+  --theme-text-color-alt: #ff6872 !important;
+  --theme-body-color-alt: #ff6872 !important;
+  --theme-content-color1: #ff6872 !important;
+  --theme-content-color2: #ff3845 !important;
+  --theme-content-color3: #ffacac !important;
+
+  --theme-icon-color: #ff3845 !important;
+  --theme-toolbar-color: #ff3845 !important;
+  --theme-icon-hover-color: #2570d4 !important;
+  --theme-toolbar-hover-color: #2570d4 !important;
+  --theme-icon-active-color: #fb932e !important;
+  --theme-toolbar-active-color: #fb932e !important;
+
+  --theme-toolbarbutton-color: #ffacac !important;
+
+  --theme-border-radius: 0 !important;
+  --theme-box-shadow: none !important;
+  --theme-transition-duration: 0.2s !important;
+  --theme-transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !important;
+
+  --theme-toolbar-selected-hover-color: #fb932e !important;
+  --theme-toolbar-selected-color: #fb932e !important;
+  --theme-toolbar-selected-background: #0e0e17 !important;
+  --theme-toolbar-selected-hover: #0e0e17 !important;
+
+  --table-selection-background-hover: #ff687234 !important;
+  --theme-selection-background: #0e0e17 !important;
+  --theme-focus-outline-color: #2570d4 !important;
+  --theme-toolbar-hover: #0e0e17 !important;
+  --theme-toolbar-active: #0e0e17 !important;
+
+  --theme-highlight-blue: #2570d4 !important;
+  --theme-highlight-purple: #9d2bf5 !important;
+  --theme-highlight-pink: #ff0077 !important;
+  --theme-highlight-red: #f75049 !important;
+  --theme-highlight-orange: #fb932e !important;
+  --theme-highlight-lightorange: #d0ff00 !important;
+  --theme-highlight-green: #00ff44 !important;
+  --theme-highlight-bluegrey: #00ffcc !important;
+  --theme-highlight-yellow: #f0b437 !important;
+
+  --console-error-color: #ff00a8;
+  --console-error-border: #ff3845;
+  --console-error-background: #030305;
+  --theme-icon-error-color: #ff00a8;
+
+  --console-warning-color: #f0b437;
+  --console-warning-border: #f0b437;
+  --console-warning-background: #030305;
+  --theme-icon-warning-color: #f0b437;
+
+  --row-striped-background: #030305 !important;
+
+  scrollbar-color: #2570d4 #030305 !important;
+
+  .message {
+    padding: 4px;
+    border-top-color: #ffffff6b !important;
+  }
+
+  .message-repeats {
+    background-color: #0e0e17 !important;
+    color: black !important;
+  }
+
+  .frame-link-filename {
+    color: #00fefc !important;
+  }
+
+  .frame-link .frame-link-source {
+    color: #00fefc !important;
+  }
+
+  .ruleview-rule-source-label {
+    color: #00fefcbd !important;
+  }
+
+  .panel-container {
+    background: #0e0e17 !important;
+    border-radius: 0 !important;
+  }
+
+  .CodeMirror-line {
+    padding: 4px !important;
+  }
+
+  .network-monitor {
+    outline: 1px solid #ff3845 !important;
+    border-radius: 0 !important;
+  }
+
+  .network.message .network-info #response-panel {
+    height: 350px !important;
+  }
+
+  .theme-body {
+    background: #0e0e17 !important;
+  }
+
+  .devtools-tab,
+  .devtools-sidebar-tabs tab {
+    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0 !important;
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing), box-shadow var(--theme-transition-duration) var(--theme-transition-timing), padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
+    font-family: var(--theme-font-family);
+    color: #ff3845;
+    letter-spacing: 0.2px;
+  }
+
+  .devtools-toolbar {
+    background-color: var(--primary-background) !important;
+  }
+
+  .devtools-button,
+  .devtools-toolbarbutton {
+    border-radius: 0 !important;
+  }
+
+  .devtools-tabbar-button:hover {
+    background-color: var(--theme-toolbar-hover) !important;
+  }
+
+  .devtools-tabbar-button:active {
+    background-color: var(--theme-toolbar-active) !important;
+  }
+
+  .devtools-button:hover,
+  .devtools-toolbarbutton:hover {
+    background-color: var(--theme-toolbar-hover) !important;
+  }
+
+  .devtools-button:active,
+  .devtools-toolbarbutton:active {
+    background-color: var(--theme-toolbar-active) !important;
+  }
+
+  .splitview-nav > li.splitview-active {
+    background-color: #0e0e17 !important;
+  }
+
+  .devtools-container,
+  .devtools-sidebar,
+  .devtools-main-content {
+    border-radius: var(--theme-border-radius) !important;
+    box-shadow: var(--theme-box-shadow) !important;
+  }
+
+  .CodeMirror,
+  .inspector-tabpanel {
+    border-radius: var(--theme-border-radius) !important;
+    transition: opacity var(--theme-transition-duration) var(--theme-transition-timing) !important;
+    font-family: 'SF Mono', Menlo, monospace !important;
+  }
+
+  .tree-rows,
+  .devtools-list {
+    border-radius: var(--theme-border-radius) !important;
+  }
+
+  .tree-row:hover,
+  .devtools-list-item:hover {
+    background-color: var(--theme-toolbar-hover) !important;
+  }
+  splitter .devtools-togglebutton {
+    border-block: none !important;
+    padding: 4px 8px !important;
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
+  .devtools-togglebutton[aria-pressed='true'] {
+    background-color: #0e0e17 !important;
+    color: #ff3845 !important;
+  }
+
+  .split-box.vert > .splitter {
+    min-width: 10px !important;
+  }
+
+  .split-box.horz > .splitter {
+    min-height: 10px !important;
+  }
+
+  .devtools-side-splitter {
+    min-width: 10px !important;
+  }
+
+  .devtools-tab-line {
+    display: none;
+  }
+
+  .ruleview-enableproperty {
+    appearance: auto !important;
+    margin-bottom: 2px !important;
+  }
+
+  .tabs .tabs-menu-item {
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing), box-shadow var(--theme-transition-duration) var(--theme-transition-timing), padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
+  }
+
+  .tag-line {
+    padding-block: 3px;
+  }
+  0e17 .theme-twisty:hover {
+    opacity: 1 !important;
+  }
+
+  .theme-selected {
+    background-color: #0e0e17 !important;
+  }
+
+  .ruleview-highlight {
+    background-color: #030305 !important;
+  }
+
+  .devtools-tabbar-button.checked {
+    color: white !important;
+  }
+
+  .tree-node.focused {
+    background-color: var(--theme-toolbar-active) !important;
+  }
+
+  .tree .tree-node:not(.focused):hover {
+    background-color: var(--theme-toolbar-active) !important;
+    color: white !important;
+  }
+
+  .source-tab::before {
+    background-color: unset !important;
+  }
+
+  .source-tab.active {
+    background-color: var(--theme-toolbar-active) !important;
+  }
+
+  .checkbox-container.menu-standard-padding {
+    background: #0e0e17 !important;
+    border-radius: 0 !important;
+  }
+  /* 
+  .request-list-item:not(.selected):hover,
+  .message-list-item:not(.selected):hover {
+    background-color: #
+  } */
+}
+
+/* :root[platform='linux'].theme-light {
+  scrollbar-color: var(--grey-40) var(--grey-20);
+} */
+
+.tooltip-container,
+.devtools-tooltip {
+  box-shadow: var(--theme-box-shadow) !important;
+  animation: tooltipFade 0.2s var(--theme-transition-timing) !important;
+  font-family: var(--theme-font-family);
+}
+
+/* Checkboxes */
+
+.devtools-cache-checkbox {
+  display: flex;
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  background-color: #030305;
+  color: #2570d4;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #ff3845;
+}
+
+input[type='checkbox']:checked {
+  background-color: #ff3845;
+  outline: 2px solid #030305;
+  outline-offset: -3px;
+}
+
+input[type='checkbox']:disabled {
+  border-color: #ffacac;
+  cursor: not-allowed;
+}
+
+button:hover {
+  color: #2570d4 !important;
+}
+
+@keyframes tooltipFade {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

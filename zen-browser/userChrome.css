@@ -1,6 +1,7 @@
 :root {
   --theme-body-font-size: 11px;
   --theme-code-font-size: 11px;
+  --zen-big-shadow: none !important;
   --theme-code-line-height: calc(15 / 11);
   --theme-toolbar-height: 24px;
   --theme-toolbar-tall-height: 28px;
@@ -9,8 +10,8 @@
   --theme-focus-outline-size: 1px;
   --theme-focus-outline: var(--theme-focus-outline-size) solid var(--theme-focus-outline-color);
   --theme-outline-offset: 0px;
-  --theme-outline-box-shadow-size: calc(2px + var(--theme-focus-outline-size) + var(--theme-outline-offset));
-  --theme-outline-box-shadow: 0 0 0 var(--theme-outline-box-shadow-size) var(--theme-body-background);
+  --theme-outline-box-shadow-size: 0;
+  --theme-outline-box-shadow: 0 0 0 0 0;
   --expression-item-height: 20.5px;
   --animation-curve: cubic-bezier(0.07, 0.95, 0, 1);
   --dimmed-highlighter-box-content-color: hsl(197, 71%, 73%, 0.3);
@@ -164,6 +165,10 @@
   --toolbar-bgcolor: #0a0e0a !important;
 }
 
+splitter {
+  background-color: var(--primary-color) !important;
+}
+
 :root {
   --text-color: #e4d5ea;
 
@@ -203,8 +208,9 @@
   --red: #ff2e6e;
   --green: #00ff00;
   --cyan: #ffb000;
-  --purple: #33ff00;
+  --purple: #b088ff;
 
+  --urlbarView-separator-color: var(--primary-color);
   --vertical-tabs-scrollbar-color: var(--primary-background);
   --vertical-tabs-scrollbar-color: var(--primary-background);
   --background-color: var(--primary-background);
@@ -481,12 +487,8 @@ toolbarbutton:active {
 }
 
 .urlbarView-row {
-  &:hover {
-  }
-}
-
-.urlbarView-row {
   margin: 0 3px;
+  color: #00e1ff !important;
   --urlbarView-highlight-color: #33ff00;
 
   .urlbarView-favicon {
@@ -498,6 +500,8 @@ toolbarbutton:active {
     background-color: #0f630cd6 !important;
 
     & .urlbarView-url,
+    & .urlbarView-title,
+    & .urlbarView-action,
     & .urlbarView-title-separator::before {
       color: #33ff00 !important;
     }
@@ -509,6 +513,17 @@ toolbarbutton:active {
     background-color: #ffb00034 !important;
 
     & .urlbarView-url,
+    & .urlbarView-title,
+    & .urlbarView-action,
+    & .urlbarView-title-separator::before {
+      color: #ffb000 !important;
+    }
+  }
+}
+
+.urlbarView-row {
+  &[selected] {
+    & *,
     & .urlbarView-title-separator::before {
       color: #ffb000 !important;
     }
@@ -602,13 +617,16 @@ menuitem {
   }
 }
 
-.urlbar-page-action {
-  color: var(--primary-color);
+.urlbarView-title {
+}
+.urlbarView-action {
+  color: var(--primary-color) !important;
   border-radius: 0;
+  --urlbar-box-text-color: var(--primary-color);
   --urlbar-box-hover-bgcolor: transparent;
 }
 
-#urlbar .urlbar-page-action,
+#urlbar .urlbarView-action,
 #urlbar #tracking-protection-icon-container,
 #urlbar:not([breakout-extend='true']) #identity-box:is(:not(.chromeUI), [pageproxystate='invalid']) #identity-icon-box {
   border-radius: 0 !important;
@@ -773,19 +791,6 @@ toolbar {
   }
 }
 
-menuitem:is([type='checkbox'], [checked='true']) .menu-iconic-icon {
-  position: relative;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0a0e0a;
-  }
-}
-
 .findbar-textbox {
   &[status='notfound'] {
     background-color: #ff000034;
@@ -795,4 +800,37 @@ menuitem:is([type='checkbox'], [checked='true']) .menu-iconic-icon {
 
 .vertical-pinned-tabs-container-separator {
   background: #33ff00 !important;
+}
+
+:root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
+  & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer,
+  & #tabbrowser-tabpanels[dragging-split='true'] {
+    & browser[transparent='true'] {
+      background-color: var(--primary-background) !important;
+    }
+  }
+}
+
+/* Checkboxes */
+
+.menu-iconic-left {
+  image {
+    appearance: none !important;
+  }
+}
+
+.menu-iconic-left,
+.checkbox-check {
+  appearance: none !important;
+  background-color: #121a12;
+  color: #00e1ff;
+  border: 1px solid #33ff00;
+  display: inline-block;
+}
+
+.menu-iconic-left[checked='true'],
+.checkbox-check[checked='true'] {
+  background-color: #33ff00;
+  outline: 2px solid #121a12;
+  outline-offset: -3px;
 }

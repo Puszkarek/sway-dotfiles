@@ -39,7 +39,7 @@
 | Keybind         | Function                |
 | --------------- | ----------------------- |
 | `Super + Enter` | Launch terminal (kitty) |
-| `Super + D`     | Launch Rofi             |
+| `Super + Space` | Launch Rofi             |
 | `Super + Q`     | Close current window    |
 
 ## Manual Installation (Arch Linux)
@@ -61,6 +61,10 @@
 1. Install utilities
    ```
    sudo pacman -S ranger lsd unzip wl-clipboard
+   ```
+1. Install packages
+   ```
+   yay -S dunst
    ```
 1. Run post-install script
    ```
@@ -86,9 +90,17 @@
    ```
    sudo cp -r .icons/* /usr/share/icons/
    ```
+1. Copy `sddm` theme
+   ```
+   sudo cp -r sddm/* /usr/share/sddm/themes/
+   ```
+   - Go to the `/usr/lib/sddm/sddm.conf.d/default.conf` file
+     - Add `Current=nyxtralis` under `[Theme]`
+     - Add `Session=sway.desktop` under `[Autologin]`
 
 ### TODOs
-- [ ] Add screenshots
-- [ ] Add icons theme
-- [ ] Add gnome theme
+
+- [ ] Create icons theme
+- [ ] Add gnome missing theme
 - [ ] Create script to automate the install
+- [ ] Add conky on the desktop
