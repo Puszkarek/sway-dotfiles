@@ -16,6 +16,10 @@ button {
   padding: 2px;
 }
 
+i {
+  --wave-color-solid-contrast-fill: #33ff00 !important;
+}
+
 *:hover {
   box-shadow: none !important;
   color: #ffb000 !important;
@@ -23,6 +27,10 @@ button {
   outline-color: #ffb000 !important;
   background-image: inherit !important;
   background-color: #0a0e0a !important;
+}
+
+[data-test='sidebar'] {
+  border-right: 1px solid #33ff00;
 }
 
 [data-test='explicit-badge'] {
