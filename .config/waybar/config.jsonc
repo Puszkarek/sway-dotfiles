@@ -6,9 +6,9 @@
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 5,
+    "margin-right": 4,
     "margin-bottom": 0,
-    "margin-left": 5,
+    "margin-left": 4,
 
     "modules-left": ["sway/workspaces"],
     "modules-center": ["custom/cava"],
@@ -34,9 +34,9 @@
     "height": 0,
 
     "margin-top": 1,
-    "margin-right": 5,
+    "margin-right": 4,
     "margin-bottom": 0,
-    "margin-left": 5,
+    "margin-left": 4,
 
     "modules-left": ["sway/workspaces", "custom/lyrics"],
     "modules-center": ["clock"],

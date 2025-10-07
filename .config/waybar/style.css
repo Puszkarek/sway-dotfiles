@@ -66,18 +66,8 @@ tooltip label {
   color: #0a0e0a;
 }
 
-#clock {
-  background-color: #0a0e0a;
-  border: 1px solid #33ff00;
-  color: #33ff00;
-  margin-left: 6px;
-}
-
-#tray {
-  background-color: #0a0e0a;
-  border: 1px solid #33ff00;
-}
-
+#tray,
+#clock,
 #cpu,
 #memory,
 #network,
