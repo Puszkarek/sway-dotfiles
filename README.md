@@ -86,6 +86,7 @@
    ```
    cp -r zen-browser/* ~/.zen/${PROFILE}/chrome/
    ```
+   1. **NOTE**: Need to enable go to `about:config` to enable legacy support
 1. Copy `icons` folder to `icons`
    ```
    sudo cp -r .icons/* /usr/share/icons/
